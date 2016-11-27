@@ -1,0 +1,21 @@
+// Config
+@import "config/config";
+@import "config/functions";
+@import "config/mixins";
+@import "config/animations";
+
+// Base
+@import "base/base";
+
+// Layout
+//@import "layout/";
+
+// Modules
+@import "modules/cards";
+@import "modules/modal";
+
+// Components
+@import "components/navbar";
+@import "components/slider";
+@import "components/acordeon";
+@import "components/index";

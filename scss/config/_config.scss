@@ -1,0 +1,63 @@
+// Importar tipografia
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans|Patrick+Hand|Source+Sans+Pro');
+
+// Fuentes
+$main-font: 'Source Sans Pro', sans-serif;
+$title-font: 'Patrick Hand', cursive;
+$light: 300;
+$normal: 400;
+
+// Gutter
+$gutter: 16px;
+
+// Tamaños
+$font-size: 16px;
+$h1: $font-size * 2.8;
+$h2: $font-size * 2.5;
+$h3: $font-size * 2.2;
+$h4: $font-size * 1.9;
+$h5: $font-size * 1.6;
+$h6: $font-size * 1.3;
+
+$z-index: (
+	backover: -100,
+	tooltip: 100,
+	overlay: 700,
+	offcanvas: 1000,
+	modal: 1500
+);
+
+$breakpoints: (
+	mobile: 640px,
+	tablet: 768px,
+	laptop: 1024px,
+	pc: 1224px,
+	large: 1824
+);
+
+$colors: (
+	azul-claro: #29DAFF,
+	azul: #00B1F3,
+	azul-medio: #006BAB,
+	azul-oscuro: #03151F,
+
+	rojo-claro: #FF6646,
+	rojo: #FF3532,
+	rojo-medio: #DD5448,
+	rojo-oscuro: #E41C39,
+
+	active: #888888,
+	success: #00CB30,
+	info: #50B2E1,
+	warning: #FDA51E,
+	danger: #BC0224,
+
+	gris-oscuro: #333333,
+	gris-claro: #CCCCCC,
+	blanco: #FFFFFF,
+	negro: #000000,
+
+	navbar-bg: #2A689E,
+	logo-bg: #25B6D6,
+	logo-tx: #041B29
+);

@@ -1,0 +1,53 @@
+.cards {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	.card {
+		cursor: pointer;
+		flex-grow: 1;
+		width: 180px;
+		border: 2px solid color(azul-oscuro);
+		border-radius: 10px;
+		padding: $gutter * 2 $gutter;
+		margin: $gutter / 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+
+		&::after {
+			content: 'ver mas...';
+			position: relative;
+			bottom: 10px;
+			font-size: 0.8em;
+		}
+
+		.card-content {
+			display: none;
+		}
+
+		&.active {
+			width: 100%;
+			order: -1;
+
+			.card-content {
+				display: block;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.card-title {
+		color: color(azul-oscuro);
+		margin: $gutter / 2 0;
+	}
+
+	[class^='card-icon'] {
+		font-size: 3em;
+	}
+}

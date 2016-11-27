@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size : $font-size;
+	font-family : $main-font;
+	line-height : 1.5;
+	color: color(negro);
+	//background-image: image('bg1.jpg');
+	background-image: image('bg2.jpg');
+
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size : $h1;
+}
+
+h2 {
+	font-size : $h2;
+}
+
+h3 {
+	font-size : $h3;
+}
+
+h4 {
+	font-size:  $h4;
+}
+
+h5 {
+	font-size:  $h5;
+}
+
+h6 {
+	font-size:  $h6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: color(info);
+	font-weight : $light;
+	font-family: $title-font;
+}
+
+img {
+	max-width : 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+footer {
+	margin-top: auto;
+	background: color(azul-oscuro);
+	color: color(blanco);
+	display: flex;
+
+	p {
+		margin: 0 $gutter;
+		text-align: center;
+
+		&:first-child {
+			margin-right: auto;
+		}
+	}
+}

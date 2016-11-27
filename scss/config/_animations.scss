@@ -1,0 +1,19 @@
+@keyframes change-bg {
+	$covers: 3;
+	$factor: 100 / $covers;
+	@for $i from 0 through $covers {
+		@if $i < $covers {
+			#{$i * $factor}% {
+				background-image: image('cover#{$i}.jpg');
+			}
+
+			#{(($i + 1) * $factor) - ($factor * 0.4)}% {
+				background-image: image('cover#{$i}.jpg');
+			}
+		} @else {
+			100% {
+				background-image: image('cover0.jpg');
+			}
+		}
+	}
+}

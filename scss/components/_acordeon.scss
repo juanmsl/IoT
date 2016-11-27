@@ -1,0 +1,40 @@
+.main-list {
+	list-style: none;
+	padding: 0;
+	box-shadow: 0 20px 15px -20px;
+}
+
+.item-name:hover, .selected {
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.item-name, .item-content {
+	text-align: center;
+}
+
+.item-name {
+	line-height: 2em;
+	cursor: pointer;
+	background: color(azul-medio);
+	color: color(blanco);
+	transition: all 0.4s;
+}
+
+.item-content {
+	box-shadow: 0 3px inset;
+}
+
+
+.slide-network {
+	padding: $gutter;
+	border: 2px solid color(azul-oscuro);
+	border-radius: 10px;
+	margin: $gutter;
+
+	&-image {
+		img {
+			max-width: 300px;
+		}
+	}
+}

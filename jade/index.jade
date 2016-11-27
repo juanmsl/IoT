@@ -1,0 +1,67 @@
+extends templates/base
+
+append config
+	-title = "Hola mundo"
+
+block nav
+	include components/navbar
+
+block main
+	section#section-cover
+		h1.cover-title Internet of Things
+	include components/introduccion
+	include components/aplicacion
+	include components/tecnologias
+	include components/impacto
+	include components/iotcolombia
+	section#section-conclusiones
+		h1.section-title Conclusiones
+		ol.conclusiones
+			li IoT, es el internet de las cosas o Internet of Things, es decir cualquier objeto que se pueda conectar a internet.
+			li IoT se caracteriza por ser un nuevo paradigma para las personas.
+			li IoT abarca diferentes áreas tales como el medio ambiente, Hogares, ciudades, automóviles entre otros.
+			li Para que las Ciudades inteligentes se conviertan en una realidad hay que tener en cuenta diferentes características tales como smart buildings, eMobility, tecnología de la información y la comunicación entre otros.
+			li La cantidad de información que se recolecta de los dispositivos es demasiado grande para una infraestructura que está empezando.
+			li IoT es la combinacion de tecnologias de redes aplicadas a un propósito en específico ya sea doméstico o de industria.
+			li IoT será el mayor mercado de dispositivos del mundo y ahorrará a las empresas miles de millones de dólares.
+			li La Internet de las cosas será el mayor mercado de dispositivos del mundo.
+			li IoT añadirá un valor de 1.700 millones de dólares a la economía mundial.
+			li Los principales beneficios del crecimiento de la IoT serán una mayor eficiencia y unos costes menores.
+	section#section-referencias
+		h1.section-title Referencias
+		ol.referencias
+			li.ref-link
+				a(target="_blank" href="http://www.endesaeduca.com/Endesa_educa/recursos-interactivos/smart-city/generacion-distribuida") http://www.endesaeduca.com/ - Generación distribuida
+			li.ref-link
+				a(target="_blank" href="http://www.endesaeduca.com/Endesa_educa/recursos-interactivos/smart-city/smart-grid") http://www.endesaeduca.com - Smart Grids
+			li.ref-link
+				a(target="_blank" href="http://cidei.net/smart-meters-tecnologia-avanzada-para-la-medicion-del-consumo-energetico-en-los-hogares/") http://cidei.net - Smart Meters: Tecnología Avanzada para la Medición del Consumo Energético en los Hogares
+			li.ref-link
+				a(target="_blank" href="http://www.endesaeduca.com/Endesa_educa/recursos-interactivos/smart-city/smart-building") http://www.endesaeduca.com - Smart Buildings
+			li.ref-link
+				a(target="_blank" href="http://www.endesaeduca.com/Endesa_educa/recursos-interactivos/smart-city/smart-sensors") http://www.endesaeduca.com - Smart Sensors
+			li.ref-link
+				a(target="_blank" href="http://emobilityworks.com/es/?l=es") http://emobilityworks.com - eMobility
+			li.ref-link
+				a(target="_blank" href="http://www.monografias.com/trabajos67/tics/tics.shtml") http://www.monografias.com - TIC
+			li.ref-link
+				a(target="_blank" href="http://www.endesaeduca.com/Endesa_educa/recursos-interactivos/smart-city/index.html") http://www.endesaeduca.com - Smart Cities
+			li.ref-link
+				a(target="_blank" href="https://es.wikipedia.org/wiki/Tecnolog%C3%ADa_de_la_informaci%C3%B3n") https://es.wikipedia.org - Tecnología de la información
+			li.ref-link
+				a(target="_blank" href="https://www.euroresidentes.com/tecnologia/internet-de-las-cosas/internet-de-las-cosas-sera-el-mayor") https://www.euroresidentes.com - IoT el mayor mercado del mundo
+			li.ref-link
+				a(target="_blank" href="http://www.gie.com.co/index.php/es/productos/eficiencia-energetica/generacion-distribuida") http://www.gie.com.co - Generacíon distribuida
+			li.ref-link
+				a(target="_blank" href="http://www.endesaeduca.com/Endesa_educa/recursos-interactivos/smart-city/smart-citizen") http://www.endesaeduca.com - Ciudadanos inteligentes
+			li.ref-link
+				a(target="_blank" href="http://www.dinero.com/economia/articulo/la-ane-explica-como-va-ocurrir-internet-cosas-colombia/213407") http://www.dinero.com
+			li.ref-link
+				a(target="_blank" href="http://www.finanzaspersonales.com.co/consumo-inteligente/articulo/que-internet-cosas-iot/56654") http://www.finanzaspersonales.com.co
+			li.ref-link
+				a(target="_blank" href="http://www.elespectador.com/tecnologia/internet-de-cosas-una-apuesta-de-pais-articulo-628723") http://www.elespectador.com
+	include components/modals
+	footer
+		p Juan Manuel Sánchez Lozano | Stephanie Dominguez Andrade
+		p &copy; 2016 | 
+			a(href='https://github.com/juanmsl/IoT') View Source
